@@ -147,7 +147,7 @@
 
     <section id="classes" class="secao">
         <h2>4. Modelo de classes</h2>
-        <p>O pacote <code>financas_pkg</code> reúne as classes abaixo. O diagrama completo de classes e de sequência
+        <p>O pacote <code>financas_pkg</code> reúne as classes abaixo. O diagrama completo de classes 
             está em <code>docs/diagrama_uml.md</code>.</p>
 
         <div class="tabela-wrapper">
