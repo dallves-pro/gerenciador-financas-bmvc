@@ -82,7 +82,7 @@ gerenciador_financas_bmvc/
 │       ├── css/financas.css      # Estilo da página
 │       └── js/financas.js        # Interações da página
 └── docs/
-    └── diagrama_uml.md           # Diagramas de classes e de sequência (Mermaid)
+    └── diagrama_uml.md           # Diagramas de classes (Mermaid)
 ```
 
 ## Origem
