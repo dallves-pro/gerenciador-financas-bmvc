@@ -1,7 +1,7 @@
 # Gerenciador de Finanças Pessoais (BMVC)
 
-Página web que apresenta o funcionamento completo do **Gerenciador de Finanças Pessoais**, um sistema
-de finanças escrito em Python com **Programação Orientada a Objetos**, servido pelo **Bottle** na
+Apresentação do funcionamento do **Gerenciador de Finanças Pessoais** via página web. O **Gerenciador de Finanças Pessoais** é um sistema
+de finanças escrito em Python com base na **Programação Orientada a Objetos**, servido pelo **Bottle** na
 estrutura **BMVC (Bottle MVC)**.
 
 A página executa o código real a cada visita. Ela mostra as regras de negócio, a arquitetura, as classes,
@@ -12,11 +12,11 @@ progresso de uma meta, o relatório consolidado e um simulador de progresso.
 
 O sistema organiza a saúde financeira do usuário:
 
-- registra receitas e despesas e calcula o saldo;
-- define um limite de orçamento por categoria e bloqueia gastos que o ultrapassem;
-- impede que o saldo fique negativo;
-- acompanha metas de economia, cujo progresso sobe com receitas e cai com despesas;
-- gera um relatório consolidado.
+- Registra receitas e despesas e calcula o saldo;
+- Define um limite de orçamento por categoria e bloqueia gastos que o ultrapassem;
+- Impede que o saldo fique negativo;
+- Acompanha metas de economia, cujo progresso sobe com receitas e cai com despesas;
+- Gera um relatório consolidado.
 
 ## Arquitetura MVC
 
@@ -89,12 +89,3 @@ gerenciador_financas_bmvc/
 
 - **Estrutura MVC:** base `hgmachine/bmvc_start_from_this` (Bottle MVC). O HTML original de boas-vindas foi
   substituído por uma página própria do gerenciador de finanças.
-- **Regras de negócio:** pacote `financas_pkg`, do projeto `dallves-pro/projeto-desktop`, copiado sem alterações
-  de lógica. O modelo é consumido pelo controlador, sem depender de nenhum código de interface.
-
-## Limitações conhecidas
-
-- Os dados ficam apenas em memória. A cada visita, a página monta novamente o mesmo cenário de demonstração,
-  e nada é salvo em disco.
-- Não há login nem controle de usuários.
-- A versão de terminal do projeto original (`test_financas.py`) não faz parte desta estrutura web.
